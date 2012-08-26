@@ -1,4 +1,4 @@
-api-php-sdk
+php-sdk
 ==============
 
 Ticket on Rails Api PHP Client
