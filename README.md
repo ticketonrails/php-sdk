@@ -57,3 +57,7 @@ Response: json response with the associated ticket id.
 		id: 12345
 		ticket: '#1'
 	}
+
+## LICENSE
+
+This SDK is released under the [MIT license](https://github.com/TicketOnRails/api-php-sdk/blob/master/LICENSE)
