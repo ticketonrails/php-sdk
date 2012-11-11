@@ -86,6 +86,20 @@ class TorApi
 		$response = $this->request("/tickets", "POST", $params, $attachment);
 		return $response;
 	}
+
+	public function get_tickets($page = 1, $limit = 20) {
+		$params = array(
+			"page" => $page,
+			"limit" => $limit
+		);
+		$response = $this->request("/tickets", "GET", $params, null);
+		return $response;
+	}
+
+	public function get_ticket($ticketId) {
+		$response = $this->request("/tickets/".$ticketId, "GET", array(), null);
+		return $response;
+	}
 }
 
 class TorApiException extends Exception { }
